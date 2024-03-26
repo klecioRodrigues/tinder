@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -63,22 +64,7 @@ class HomePage extends StatelessWidget {
             ),
             Column(
               children: [
-                Text(
-                  "Manage your expenses Seamlessly",
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  width: 300,
-                ),
-                Text(
-                  "Get your Money Under Control",
-                  style: DefaultTextStyle.of(context)
-                      .style
-                      .apply(fontSizeFactor: 1),
-                ),
-                SizedBox(
-                  width: 100,
-                )
+                const Text("Get"),
               ],
             ),
             Container(
