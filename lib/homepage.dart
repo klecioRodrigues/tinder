@@ -56,15 +56,65 @@ class HomePage extends StatelessWidget {
                     child: Container(),
                   ),
                   Container(),
+                  SizedBox(
+                    height: 300,
+                  )
                 ],
               ),
             ),
-            SizedBox(
-              height: 300,
-            ),
-            Column(
-              children: [
-                const Text("Get"),
+            const Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Center(
+                  widthFactor: 2,
+                  child: Text(
+                    'Get your Money',
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      fontSize: 32,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Center(
+                  widthFactor: 2,
+                  child: Text(
+                    'Under Control',
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      fontSize: 32,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Center(
+                  widthFactor: 2,
+                  child: Text(
+                    'Manage your expenses',
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Center(
+                  widthFactor: 2,
+                  child: Text(
+                    'Seamlessly',
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 150,
+                )
               ],
             ),
             Container(
@@ -87,8 +137,14 @@ class HomePage extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: const Center(child: Text("Sign Up with Google ")),
+                  child: const Center(
+                    child: Text("Sign Up with Google "),
+                  ),
                 ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text('al')
               ],
             ),
           ],
