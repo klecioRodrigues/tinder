@@ -1,5 +1,9 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,7 +18,9 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 100),
+            const SizedBox(
+              height: 90,
+            ),
             SizedBox(
               width: double.infinity,
               child: Row(
@@ -39,24 +45,24 @@ class HomePage extends StatelessWidget {
                         decoration: const BoxDecoration(
                             color: Color.fromARGB(255, 62, 0, 161),
                             borderRadius: BorderRadius.only(
-                                bottomRight: Radius.circular(80))),
+                                bottomLeft: Radius.circular(80))),
                       ),
                     ],
                   ),
                   Container(
                     width: 60,
                     height: 140,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color.fromARGB(255, 62, 0, 161),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(130),
-                        bottomLeft: Radius.circular(130),
+                        bottomRight: Radius.circular(130),
                       ),
                     ),
                     child: Container(),
                   ),
                   Container(),
-                  SizedBox(
+                  const SizedBox(
                     height: 300,
                   )
                 ],
@@ -64,7 +70,7 @@ class HomePage extends StatelessWidget {
             ),
             const Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 Center(
                   widthFactor: 2,
                   child: Text(
@@ -141,11 +147,23 @@ class HomePage extends StatelessWidget {
                     child: Text("Sign Up with Google "),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text('al')
               ],
+            ),
+            const Center(
+              child: Text(
+                ' Already have an account?',
+                style: TextStyle(fontSize: 15, color: Colors.white),
+              ),
+            ),
+            const Text(
+              'Sign in?',
+              style: TextStyle(
+                decoration: TextDecoration.underline,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
